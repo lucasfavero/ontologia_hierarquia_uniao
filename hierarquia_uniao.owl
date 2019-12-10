@@ -1,0 +1,935 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/luke/ontologies/2019/11/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/luke/ontologies/2019/11/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:hierarquia_uniao="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#nomeLider -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#nomeLider">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Advocacia_Geral_Uniao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Advocacia_Geral_Uniao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Presidencia_Republica"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Assembleias_Legislativas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Assembleias_Legislativas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Assembleia_legislativa_(Brasil)
+
+http://www.alesc.sc.gov.br/sobre
+
+No Brasil, a Assembleia Legislativa dos estados federados são os órgãos de poder legislativo dos respectivos estados por meio dos deputados estaduais.
+Ao contrário da representação federal, é unicameral. As Assembleias Legislativas são compostas por deputados (estaduais) eleitos a cada quatro anos em voto direto e secreto pelo método D&apos;Hondt, sendo o número de membros igual ao triplo da representação na Câmara dos Deputados.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Deputados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Deputados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://www.camara.leg.br/papel-e-estrutura/
+
+https://pt.wikipedia.org/wiki/C%C3%A2mara_dos_Deputados_do_Brasil
+
+A Câmara dos Deputados é a câmara baixa do Congresso Nacional do Brasil e, ao lado do Senado Federal, faz parte do Poder Legislativo da União. A Câmara está localizada na praça dos Três Poderes, na capital federal,[1] e é composta pela Mesa da Câmara dos Deputados do Brasil, pelo Colégio de Líderes e pelas Comissões, que podem ser permanentes, temporárias, especiais ou de inquérito</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Vereadores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Vereadores">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/C%C3%A2mara_municipal_(Brasil)
+
+https://www.cmc.pr.gov.br/funcao.php
+
+No Brasil, a Câmara Municipal é o órgão legislativo dos municípios, configurando-se como a assembleia de representantes dos cidadãos ali residentes. Apesar de ter as mesmas origens das câmaras portuguesas, atualmente possuem funções diferentes: a brasileira é um órgão legislativo e em Portugal possui atribuições de poder executivo. Como órgão legislativo municipal, a câmara municipal brasileira é equivalente à atual assembleia municipal portuguesa.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Congresso_Nacional -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Congresso_Nacional">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://www.congressonacional.leg.br/institucional/atribuicoes
+
+O Congresso Nacional é o órgão constitucional que exerce, no âmbito federal, as funções do poder legislativo, quais sejam, elaborar/aprovar leis e fiscalizar o Estado brasileiro (suas duas funções típicas), bem como administrar e julgar (funções atípicas). O Congresso é bicameral, logo composto por duas Casas: o Senado Federal (integrado por 81 senadores, que representam as 27 unidades federativas (os 26 estados e o Distrito Federal) e a Câmara dos Deputados (integrada por 513 deputados federais, que representam o povo). O sistema bicameral foi adotado em razão da forma de Estado instalada no País (federação), buscando equilibrar o peso político das unidades federativas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Conselho_Nacional_Justica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Conselho_Nacional_Justica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://www.cnj.jus.br/sobre-o-cnj/quem-somos-e-visitas/
+
+O Conselho Nacional de Justiça (CNJ) é uma instituição pública que visa aperfeiçoar o trabalho do sistema judiciário brasileiro, principalmente no que diz respeito ao controle e à transparência administrativa e processual.
+
+Missão: desenvolver políticas judiciárias que promovam a efetividade e a unidade do Poder Judiciário, orientadas para os valores de justiça e paz social.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Coordenadorias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Coordenadorias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://educacao.rs.gov.br/equipe
+
+Um exemplo de Coordenadoria seria: 
+
+À Secretaria da Educação, Órgão Central e Administradora do Sistema Estadual de Ensino, com a estrutura básica e competência definidas pela Lei nº 14.733, de 15 de setembro de 2015, modificada pela Lei nº 14.984, de 16 de janeiro de 2017, e em conformidade com o decreto 54.015, de 10 de abril de 2018, compete:
+
+a) administrar o Sistema Estadual de Ensino, garantindo a observância da legislação e normas complementares, articulado ao Sistema Nacional de Educação;
+
+b) organizar, manter e desenvolver os órgãos e instituições do Sistema Estadual de Ensino mantidos pelo poder público;
+
+c) estabelecer metas, planejando, programando, executando e fiscalizando as prioridades referente às obras escolares;
+
+d) executar, promover, financiar e fiscalizar as políticas de educação do Estado do Rio Grande do Sul na Educação Básica e em suas modalidades de ensino;
+
+e) promover e fortalecer o regime de colaboração entre os entes federativos e demais instituições públicas e privadas;
+
+f) promover e estabelecer políticas de prevenção de acidentes e violência no ambiente escolar e no entorno dos estabelecimentos de ensino;
+
+g) planejar, orientar e coordenar, em articulação com os sistemas de ensino, a implementação de políticas para a alfabetização, a educação de jovens e adultos, a educação do campo, a educação indígena, a educação em áreas remanescentes de quilombos e a educação especial.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Defensoria_Publica_Uniao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Defensoria_Publica_Uniao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+
+https://pt.wikipedia.org/wiki/Defensoria_P%C3%BAblica_da_Uni%C3%A3o
+
+A Defensoria Pública da União (DPU) é instituição essencial à função jurisdicional do Estado, incumbindo-lhe a orientação jurídica e a defesa dos necessitados, em todos os graus, perante o Poder Judiciário da União (a Justiça Federal, a Justiça Eleitoral, a Justiça do Trabalho e a Justiça Militar).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Departamentos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Departamentos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+
+https://pt.wikipedia.org/wiki/Lista_de_autarquias_federais_do_Brasil#Departamentos
+
+Exemplos de departamentos: Policia Federal (PF), Departamento Nacional de Infraestrutura de Transportes (DNIT) e Departamento Nacional de Obras Contra a Seca (DNOCS)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Distrito_Federal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Distrito_Federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Escolas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Escolas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Subalternos"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Gerais"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://educador.brasilescola.uol.com.br/gestao-educacional/a-organizacao-estrutura-dos-sistemas-ensino-no-brasil.htm
+
+
+Os órgãos responsáveis pela educação, em nível federal, são o Ministério da Educação (MEC) e o Conselho Nacional de Educação (CNE). Em nível estadual, temos a Secretaria Estadual de Educação (SEE), o Conselho Estadual de Educação (CEE), a Delegacia Regional de Educação (DRE) ou Subsecretaria de Educação. E, por fim, em nível municipal, existem a Secretaria Municipal de Educação (SME) e o Conselho Municipal de Educação (CME).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Poderes_Publicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Gabinetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Gabinetes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://www.politize.com.br/gabinete-parlamentar-composicao/
+
+abendo que as principais funções dos parlamentares é legislar, fiscalizar e controlar as ações do Poder Executivo, o gabinete parlamentar tem como principal objetivo possibilitar o exercício e a viabilidade das principais funções dos legisladores. Assim, a composição dos gabinetes parlamentares visa a:
+
+Organizar a atividade institucional do parlamentar;
+Dar o suporte necessário para suas atividades cotidianas e atípicas;
+Auxiliar nas tomadas de decisões;
+Possibilitar o contato com sua base eleitoral, receber demandas de instituições e cidadãos e encaminhar solicitações;
+Analisar tramitações para criação de juízo técnico e político (tramitação de projetos? entenda aqui!);
+Fazer contatos governamentais;
+Elaborar projetos de lei e emendas orçamentárias;
+Filtrar informações pertinentes e demais definições criadas ou tomadas por aquele mandato.
+Para isso, o gabinete conta com uma equipe de funcionários da confiança do ator político. Eles compõem o gabinete por meio da livre nomeação – conhecida popularmente como indicação ou, tecnicamente, como cargos de recrutamento amplo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Governos_Estaduais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Governos_Estaduais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Hospitais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Hospitais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Subalternos"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Gerais"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+http://www.saude.gov.br/component/content/article/681-institucional/40029-sistema-nacional-de-saude
+
+
+Conheça a estrutura do SUS
+Ministério da Saúde
+Gestor nacional do SUS, formula, normatiza, fiscaliza, monitora e avalia políticas e ações, em articulação com o Conselho Nacional de Saúde. Atua no âmbito da Comissão Intergestores Tripartite (CIT) para pactuar o Plano Nacional de Saúde. Integram sua estrutura: Fiocruz, Funasa, Anvisa, ANS, Hemobrás, Inca, Into e oito hospitais federais.
+
+Secretaria Estadual de Saúde (SES)
+Participa da formulação das políticas e ações de saúde, presta apoio aos municípios em articulação com o conselho estadual e participa da Comissão Intergestores Bipartite (CIB) para aprovar e implementar o plano estadual de saúde.
+
+Secretaria Municipal de Saúde (SMS)
+Planeja, organiza, controla, avalia e executa as ações e serviços de saúde em articulação com o conselho municipal e a esfera estadual para aprovar e implantar o plano municipal de saúde.
+
+Conselho Nacional de Saúde (CNS)
+O CNS propõe, delibera, monitora e avalia as políticas públicas e o plano de saúde adotados nas três esferas de governo. É composto por 48 instituições, metade representando entidades de usuários e movimentos sociais. Os conselhos de saúde garantem a participação da população na fiscalização e formulação de estratégias da aplicação pública dos recursos de saúde.
+
+Conselho de Saúde (municipal ou estadual)
+São 26 conselhos estaduais, um do DF e 5.562 conselhos municipais (continua este número?) que atuam como instância de participação social e controle das políticas e planos de saúde.
+
+Conselho Nacional de Secretário da Saúde (Conass)
+Entidade representante das secretarias estaduais de saúde e do DF, integra a CIT e atua em prol de ações e serviços de saúde.
+
+Conselho Nacional de Secretarias Municipais de Saúde (Conasems)
+Entidade representante das secretarias municipais de saúde, integra a CIT e atua em prol de ações e serviços de saúde.
+
+Conselhos de Secretarias Municipais de Saúde (Cosems)
+Representação estadual dos Conasems, integra a CIB, articula e mobiliza os secretários municipais para o intercâmbio de experiências e fortalecimento das políticas de saúde.
+
+Comissão Intergestores tripartite (CIT)
+Instância deliberativa que integra gestores municipais, estaduais e federais para o planejamento, implementação e avaliação de políticas de planos de saúde.
+
+Comissão Intergestores Bipartite (CIB)
+Instância deliberativa que integra gestores estaduais e municipais para o planejamento, implementação e avaliação de políticas e planos de saúde.
+
+Mesa Nacional de Negociação Permanente do SUS
+Criada em 2003, a MNNP-SUS reúne gestores e trabalhadores para negociação e aperfeiçoamento da relação de trabalho no setor saúde.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Inspetorias_Gerais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Inspetorias_Gerais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+http://www.receita.fazenda.gov.br/historico/srf/historia/catalogo/letrai/insp_gerais.htm
+
+
+Um exemplo de inspetoria seria:
+
+Inspetoria Geral de Finanças
+-Criada pelo Decreto-Lei n. 200, de 1967, como órgão central de planejamento, coordenação e controle financeiro, era também o órgão central do Sistema de Administração Financeira, Contabilidade e Auditoria. Diretamente subordinada ao Ministro da Fazenda, sucedeu à Contadoria Geral da República.
+
+-A ela se subordinavam projeções nos Estados chamadas Inspetorias Seccionais.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Poderes_Publicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Poderes_Publicos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Presidencia_Republica"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+
+https://pt.wikipedia.org/wiki/Minist%C3%A9rios_do_Brasil
+
+Os ministérios do Brasil são órgãos do poder executivo federal brasileiro. Desde janeiro de 2019, são 22 pastas ministeriais, sendo 16 ministérios, duas secretarias e quatro órgãos equivalentes a ministérios.[1] Cada ministério é responsável por uma área específica e é liderado por um ministro ou ministro-chefe. O titular da pasta é escolhido pelo Presidente da República.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos">
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Pol%C3%ADtica_do_Brasil
+
+https://www.estudegratis.com.br/dicas/classificacao-dos-orgaos-publicos#Orgaos_subalternos
+
+
+Esses estão localizados na direção da Administração, logo abaixo dos órgãos independentes e diretamente subordinados a seus chefes.
+Possuem grande autonomia administrativa, financeira e técnica, caracterizando-se como órgãos diretivos, com funções precípuas de planejamento, supervisão, coordenação e controle, como exemplos: os ministérios, as secretarias, a Advocacia-Geral da União, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Comandados_Governo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Comandados_Governo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Subalternos"/>
+        <rdfs:comment>Não foram encontradas definições concretas para Orgãos Comandados pelo Governo.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes">
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Pol%C3%ADtica_do_Brasil
+
+https://www.estudegratis.com.br/dicas/classificacao-dos-orgaos-publicos#Orgaos_subalternos
+
+São os originários da Constituição Federal e representativos dos Poderes de Estado, como exemplo,  Presidência da República, Câmara dos Deputados, Senado Federal, STF,  e demais tribunais.
+Portanto no topo da pirâmide governamental, não possuindo qualquer subordinação hierárquica ou funcional. São também chamados de órgãos primários. Exercem principalmente funções políticas, judiciais, outorgadas diretamente pela Constituição para serem desempenhadas por seus membros, conhecidos como agentes políticos.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Subalternos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Subalternos">
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Pol%C3%ADtica_do_Brasil
+
+https://www.estudegratis.com.br/dicas/classificacao-dos-orgaos-publicos#Orgaos_subalternos
+
+São os órgãos que exercem atribuições de execução principal, com mínimo poder decisório. Encontram-se subordinados a vários níveis hierárquicos superiores. Destinam-se à realização de serviços de rotina, cumprimento de decisões, atendimento ao público, etc. Como exemplos as portarias e seções de expediente.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores">
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Pol%C3%ADtica_do_Brasil
+
+https://www.estudegratis.com.br/dicas/classificacao-dos-orgaos-publicos#Orgaos_subalternos
+
+São os que possui poder de direção, decisão e comando de assuntos de sua competência específica, mas sempre estão sujeitos à subordinação e ao controle hierárquico de uma chefia mais alta. Não gozam de autonomia administrativa nem financeira. Representam as primeiras repartições dos órgãos independentes a autônomos, recebendo diferentes denominações, como: gabinetes, secretárias-gerais, procuradorias, coordenadorias, departamentos, etc.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Poderes_Publicos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Poderes_Publicos">
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+
+https://pt.wikipedia.org/wiki/Pol%C3%ADtica_do_Brasil
+
+https://pt.wikipedia.org/wiki/Governo_federal_do_Brasil#Estrutura
+
+https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_do_Estado_na_Constitui%C3%A7%C3%A3o_do_Brasil
+
+https://pt.wikipedia.org/wiki/Separa%C3%A7%C3%A3o_de_poderes
+
+A teoria da separação dos poderes de Montesquieu, na qual se baseia a maioria dos Estados ocidentais modernos, afirma a distinção dos três poderes (executivo, legislativo e judiciário) e suas limitações mútuas.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Portarias_Governo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Portarias_Governo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Subalternos"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.m.wikipedia.org/wiki/Portaria
+
+No Brasil é, no direito administrativo brasileiro, ato jurídico originário do Poder Executivo, que contém ordens/instruções acerca da aplicação de leis ou regulamentos, recomendações de caráter geral e normas sobre a execução de serviços, a fim de esclarecer ou informar sobre atos ou eventos realizados internamente em órgão público, tais como nomeações, demissões, medidas de ordem disciplinar, pedidos de férias, licenças por luto, licenças para tratamento de saúde, licença em razão de casamento (gala) de funcionários públicos, ou qualquer outra determinação da sua competência.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Prefeituras -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Prefeituras">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Presidencia_Republica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Presidencia_Republica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Procuradorias_Administrativas_Judiciais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Procuradorias_Administrativas_Judiciais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+http://www.procuradoria.go.gov.br/a-procuradoria.html
+
+Um exemplo de Procuradoria seria: 
+
+A PGE é o escritório de advocacia da administração pública estadual e exerce, como instituição permanente, uma função essencial à Justiça. Sua missão é orientar a condução de processos administrativos e representar a Fazenda Pública nos processos judiciais. Assim, a Procuradoria atende a administração direta e também autarquias, fundações e entidades paraestatais. A carreira está prevista no artigo 132 da Constituição Federal e nos artigos 118 e 119 da Constituição Estadual. A PGE ainda é regida pela Lei Complementar nº 58, de 04 de julho de 2006.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Estaduais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Estaduais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Governos_Estaduais"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+
+https://pt.wikipedia.org/wiki/Secretaria_de_Estado
+
+Secretaria de Estado é a designação genérica dos departamentos executivos dos governos de certos países, estados ou territórios. Cada secretaria de Estado é normalmente dirigida por um secretário de Estado.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Gerais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Gerais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Superiores"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Municipais"/>
+        <rdfs:comment>Não foram encontradas definições concretas para Secretarias Gerais. Secretarias gerias é um termo generico para as secretarias.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Municipais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Municipais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Autonomos"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Prefeituras"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Categoria:Secretarias_municipais_de_governo_do_Brasil</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Senado_Federal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Senado_Federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://www12.senado.leg.br/institucional/sobre-atividade
+
+O Poder Legislativo Federal é exercido pelo Congresso Nacional, que se compõe de duas casas legislativas: a Câmara dos Deputados e o Senado Federal. Pode-se afirmar, assim, que o Poder Legislativo Federal é bicameral. São funções típicas do Poder Legislativo legislar e fiscalizar.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Eleitoral -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Eleitoral">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Justica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Justica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+http://www.stj.jus.br/sites/portalp/Institucional/Atribuicoes
+
+O STJ julga crimes comuns praticados por governadores, desembargadores estaduais, federais, eleitorais e trabalhistas, conselheiros de tribunais de contas e procuradores da República, entre outros. Nesses casos, um ministro do STJ preside o inquérito, conduzido pela Polícia Federal e pelo Ministério Público Federal. É do ministro relator a competência para autorizar ou determinar diligências e prisões nessa fase preliminar.
+
+Ao final das investigações, um subprocurador-geral da República apresenta denúncia, se entender existir indícios de crime. Essa denúncia é apreciada pelos ministros da Corte Especial. Se recebida, tem início a ação penal. Ao final do processo, a ação é julgada, podendo resultar em condenação ou absolvição do réu.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Militar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Militar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://www.stm.jus.br/o-stm-stm/institucional
+
+A Justiça Militar da União é a mais antiga do País, com mais de 200 anos. Ela decorre da própria existência das Forças Armadas.
+Conforme o artigo 124 da Constituição Federal, julga os crimes militares previstos no Código Penal Militar (CPM), tendo como principais jurisdicionados os militares das Forças Armadas e, em certos casos, até civis.
+Passou a integrar o Poder Judiciário a partir da Constituição de 1934 e seus julgamentos seguem a mesma sistemática do Judiciário Brasileiro.
+Missão: Processar e julgar crimes militares definidos em Lei a fim de contribuir para a promoção da Justiça.
+Visão: Ser reconhecida pela sociedade como instituição de excelência do Poder Judiciário
+Valores: Ética, Imparcialidade, Acessibilidade, Modernidade, Celeridade, Responsabilidade  Social e Ambiental, Probidade e Transparência</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Trabalho -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Trabalho">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Tribunal_Superior_do_Trabalho
+
+
+O Tribunal Superior do Trabalho (TST) é a instância mais elevada de julgamento para temas envolvendo o direito do trabalho no Brasil.
+Consistindo na instância máxima da Justiça Federal especializada do Trabalho brasileiro que por sua vez organiza-se em Tribunais Regionais do Trabalho (TRT) e que por sua vez coordenam as Varas do Trabalho.
+É um dos Tribunais Superiores brasileiros, ao lado do Superior Tribunal Militar (STM), do Tribunal Superior Eleitoral (TSE) e do Superior Tribunal de Justiça (STJ).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Supremo_Tribunal_Federal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Supremo_Tribunal_Federal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+http://portal.stf.jus.br/textos/verTexto.asp?servico=sobreStfConhecaStfInstitucional
+
+https://pt.wikipedia.org/wiki/Supremo_Tribunal_Federal
+
+O Supremo Tribunal Federal (STF) é a mais alta instância do poder judiciário brasileiro,[1] e acumula tanto competências típicas de uma suprema corte, ou seja, um tribunal de última instância, como de um tribunal constitucional, que seria aquele que julga questões de constitucionalidade independentemente de litígios concretos. Sua função institucional fundamental é de servir como guardião da Constituição Federal de 1988, apreciando casos que envolvam lesão ou ameaça a esta última.[2][3] De suas decisões não cabe recurso a nenhum outro tribunal.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Tribunais_Juri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Tribunais_Juri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://portal-justificando.jusbrasil.com.br/noticias/305242048/entenda-como-funciona-o-tribunal-do-juri
+
+O tribunal do Júri, instituído no Brasil desde 1822 e previsto na Constituição Federal, é responsável por julgar crimes dolosos contra a vida. Neste tipo de tribunal, cabe a um colegiado de populares – os jurados sorteados para compor o conselho de sentença – declarar se o crime em questão aconteceu e se o réu é culpado ou inocente. Desta forma, o magistrado decide conforme a vontade popular, lê a sentença e fixa a pena, em caso de condenação.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Tribunais_Regionais_Federais -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Tribunais_Regionais_Federais">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Independentes"/>
+        <rdfs:comment>Informações obtidas sobre o órgão em: 
+https://pt.wikipedia.org/wiki/Justi%C3%A7a_Federal
+https://blog.meuprecatorio.com.br/trf-como-funcionam-os-tribunais-regionais-federais/
+
+Os TRFs representam o segundo grau de jurisdição da Justiça Federal, ou seja, são responsáveis por julgar os recursos contra decisões de competência federal. Vale ressaltar que essas decisões podem ser emitidas por juízes federais e, em alguns casos, por juízes estaduais. Ou seja, a questão é analisada inicialmente por um juiz federal. Havendo recurso, essa decisão é revisada perante o TRF competente.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Advocacia_Geral_Uniao_Ministerio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Advocacia_Geral_Uniao_Ministerio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>André Luiz de Almeida Mendonça</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Agricultura_Pecuaria_Abastecimento -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Agricultura_Pecuaria_Abastecimento">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Tereza Cristina</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Banco_Central_Brasil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Banco_Central_Brasil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Roberto Campos Neto</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Casa_Civil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Casa_Civil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Onyx Lorenzoni</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Cidadania -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Cidadania">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Osmar Terra</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ciencia_Tecnologia_Inovaçoes_Comunicações -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ciencia_Tecnologia_Inovaçoes_Comunicações">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Marcos Pontes</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Controladoria_Geral_Uniao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Controladoria_Geral_Uniao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Wagner Rosário</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Defesa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Defesa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Fernando Azevedo e Silva</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Desenvolvimento_Regional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Desenvolvimento_Regional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Gustavo Canuto</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Economia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Economia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Paulo Guedes</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Educação -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Educação">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Abraham Weintraub</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Gabinete_Segurança_Institucional -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Gabinete_Segurança_Institucional">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Augusto Heleno</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Infraestrutura -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Infraestrutura">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Tarcísio Gomes de Freitas</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Justiça_Segurança_Publica -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Justiça_Segurança_Publica">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Sérgio Moro</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Meio_Ambiente -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Meio_Ambiente">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Ricardo Salles</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Minas_Energia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Minas_Energia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Bento Albuquerque</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Mulher_Familia_Direitos_Humanos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Mulher_Familia_Direitos_Humanos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Damares Alves</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Relaçoes_Exteriores -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Relaçoes_Exteriores">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Ernesto Araújo</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Saude -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Saude">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Luiz Henrique Mandetta</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretaria_Geral -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretaria_Geral">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Jorge Oliveira</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretaria_Governo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretaria_Governo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Luiz Eduardo Ramos</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Turismo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Turismo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+        <hierarquia_uniao:nomeLider>Marcelo Álvaro Antônio</hierarquia_uniao:nomeLider>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment>Informações obtidas sobre a estrutura hierarquica do Estado Brasileiro em: 
+
+https://pt.wikipedia.org/wiki/Pol%C3%ADtica_do_Brasil
+
+https://pt.wikipedia.org/wiki/Organiza%C3%A7%C3%A3o_do_Estado_na_Constitui%C3%A7%C3%A3o_do_Brasil
+
+Essa ontologia foi criada com o objetivo de mapear o domínio hierárquico do Estado Brasileiro. Tendo propósito principal de identificar por quais órgãos/instituições os poderes: Executivo, Legisltivo e Judiciario são responsáveis.
+
+A hierarquia que aqui se encontra é baseada em uma interpretação da constituição federal no Título III, Capítulo I, da Organização Político-Administrativa, sendo seu primeiro artigo, o de número 18 e o último, o artigo 43.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Advocacia_Geral_Uniao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Defensoria_Publica_Uniao"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Ministerios"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Estaduais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Municipais"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Assembleias_Legislativas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Deputados"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Vereadores"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Congresso_Nacional"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Conselho_Nacional_Justica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Distrito_Federal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Governos_Estaduais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Prefeituras"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Presidencia_Republica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Senado_Federal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Eleitoral"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Justica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Militar"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Trabalho"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Supremo_Tribunal_Federal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Tribunais_Juri"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Tribunais_Regionais_Federais"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Camara_Deputados"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Distrito_Federal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Governos_Estaduais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Presidencia_Republica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Senado_Federal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Superior_Tribunal_Justica"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Supremo_Tribunal_Federal"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Coordenadorias"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Departamentos"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Gabinetes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Inspetorias_Gerais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Procuradorias_Administrativas_Judiciais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Secretarias_Gerais"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Escolas"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Hospitais"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Orgaos_Comandados_Governo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Portarias_Governo"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Executivo"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Judiciario"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/luke/ontologies/2019/11/hierarquia_uniao#Legislativo"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
